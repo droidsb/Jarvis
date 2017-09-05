@@ -45,9 +45,9 @@ function sleep(miliseconds) {
     		nameknown = true;
     		
     		
-    		fs.writeFileSync('./Fname.js', username);
-    		fs.writeFileSync('./Lname.js', userLname);
-    		fs.writeFileSync('./NameK.js', "true");
+    		fs.writeFileSync('./Modules/Fname.js', username);
+    		fs.writeFileSync('./Modules/Lname.js', userLname);
+    		fs.writeFileSync('./Modules/NameK.js', "true");
 		}
 		
 		if (FQ.indexOf('I am') >= 0) { 
@@ -72,9 +72,9 @@ function sleep(miliseconds) {
 			
     		nameknown = true;
     		
-    		fs.writeFileSync('./Fname.js', username);
-    		fs.writeFileSync('./Lname.js', userLname);
-    		fs.writeFileSync('./NameK.js', "true");
+    		fs.writeFileSync('./Modules/Fname.js', username);
+    		fs.writeFileSync('./Modules/Lname.js', userLname);
+    		fs.writeFileSync('./Modules/NameK.js', "true");
     		
 		}
 	
