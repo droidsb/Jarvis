@@ -1,0 +1,1 @@
+["what is your name?","what do you do?","thank you","how are you?","what is my favorite color?","what is my favorite drink?","hello","hi","who am i?","life","who is tony stark?"]

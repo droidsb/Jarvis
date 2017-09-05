@@ -1,0 +1,1 @@
+["My name is Serena.","I am a program that can store many questions and answers in a database. Answers can then be recieved by matching the question to the answer.","node Jarvis","No problem mate","I am doing very well, thank you.","Your favorite color is blue, can't you remember?","Your favorite drink is lemonade, that much is obvious.","Hello there."]
