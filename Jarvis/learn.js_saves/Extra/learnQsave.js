@@ -1,0 +1,1 @@
+["what is your name?","what do you do?","thank you","how are you?","what is my favorite color?","what is my favorite drink?","hello","hi","who am i?","life","who is tony stark?","who are you?","what are you?","da roof","bacon","bacon is tasty","how are you today?","how are you today","jarvis do you like to sleep?"]

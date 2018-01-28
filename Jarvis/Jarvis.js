@@ -16,7 +16,7 @@ var LaughR = require('./Modules/LaughR.js');
 var NameR = require('./Modules/NameR.js');
 var PlaySong = require('./Modules/PlayMusic.js');
 var Wiki = require("wikipedia");
-var Serena = require('./Serena/Serena.js');
+var Serena = require('./Serena/JarvisQA.js');
 var Help = require('./Modules/Help.js');
 var Reset = require('./Modules/Reset.js');
 
@@ -256,13 +256,97 @@ if(FQ==="!help" || FQ==="!Help"){
 
 	else{
 	if(nameknown===false){
-				say.speak("I'm sorry, I do not understand");
-				console.log("Jarvis: I'm sorry, I do not understand");
+				say.speak("I'm sorry, I do not understand, '"+FQ+"'");
+				console.log("Jarvis: I'm sorry, I do not understand, '"+FQ+"'");
+				say.speak("Would you like me to search the web for, '"+FQ+"'?");
+				console.log("Jarvis: Would you like me to search the web for, '"+FQ+"'?");
+				var SearchYN = readline.question("You: ");
+				
+				if(SearchYN==="Yes" || SearchYN==="yes"){
+	
+				//SearchYN=SearchYN.replace('Search ','');
+				//SearchYN=SearchYN.replace('What is','');
+		
+				Wiki.wiki(SearchYN);
+		
+		
+				return;
+	
+				}
+				
+				if(SearchYN==="No" || SearchYN==="no"){
+					console.log("Jarvis: Can you provide me an answer to, '"+FQ+"'?");
+					var QandAYN = readline.question("You: ");
+					
+					if(QandAYN==="Yes" || QandAYN==="yes"){
+						
+						var AnswerQandA = readline.question("You: ");
+						
+						console.log("");
+						console.log("");
+						console.log("--------------------------------------------------------");
+	
+						Serena.start(username, userLname, nameknown, talk, AnswerQandA);
+		
+						console.log("--------------------------------------------------------");
+						console.log("");
+						console.log("");
+					
+						
+					
+					}
+	
+				}
+
+				
 			
 			}
 			if(nameknown===true){
-				say.speak("I'm sorry mister "+userLname+", I do not understand");
-				console.log("Jarvis: I'm sorry mister "+userLname+", I do not understand");
+				say.speak("I'm sorry mister "+userLname+", I do not understand, '"+FQ+"'");
+				console.log("Jarvis: I'm sorry mister "+userLname+", I do not understand, '"+FQ+"'");
+				say.speak("Would you like me to search the web for, '"+FQ+"'?");
+				console.log("Jarvis: Would you like me to search the web for, '"+FQ+"'?");
+				var SearchYN = readline.question("You: ");
+				
+				if(SearchYN==="Yes" || SearchYN==="yes"){
+	
+				//SearchYN=SearchYN.replace('Search ','');
+				//SearchYN=SearchYN.replace('What is','');
+		
+				Wiki.wiki(SearchYN);
+		
+		
+				return;
+	
+				}
+				
+				if(SearchYN==="No" || SearchYN==="no"){
+					console.log("Jarvis: Can you provide me an answer to, '"+FQ+"'?");
+					var QandAYN = readline.question("You: ");
+					
+					if(QandAYN==="Yes" || QandAYN==="yes"){
+						
+						
+						console.log("");
+						console.log("");
+						console.log("--------------------------------------------------------");
+	
+						Serena.start(username, userLname, nameknown, talk, FQ);
+		
+						console.log("--------------------------------------------------------");
+						console.log("");
+						console.log("");
+					
+						
+					
+					}
+	
+				}
+
+				
+				
+				
+				
 			}
 		
 	
